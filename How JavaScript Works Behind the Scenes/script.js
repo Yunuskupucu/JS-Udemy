@@ -21,7 +21,8 @@ const firstName = ' jonas';
 calcAge(1991);
 */
 
-// var firstName = 'Matilda'; // var is global variable
+/*
+// var firstName = 'Matilda'; // var is global
 
 const jonas = {
   firstName: 'jonas',
@@ -69,3 +70,23 @@ var addArrow = (a, b) => {
 };
 
 addArrow(2, 5, 8);
+*/
+
+/*
+// Primitives vs. Objects (Primitive vs. Reference Types)
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+  name: 'jonas',
+  age: 30,
+};
+
+const friend = me;
+friend.age = 27;
+console.log('me', me);
+console.log('friend', friend) ;
+*/
