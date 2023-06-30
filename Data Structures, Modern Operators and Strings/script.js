@@ -6,6 +6,10 @@ const restaurant = {
   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
   satarterMenu: ['Foccacia', 'Bruschetta', 'Garlic', 'Bread', 'Caprese Salad'],
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+
+  order: function (starterIndex, mainIndex) {
+    return [this.satarterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
 };
 
 const arr = [2, 3, 4];
@@ -28,3 +32,7 @@ console.log(main, secondary);
 
 [main, secondary] = [secondary, main];
 console.log(main, secondary);
+
+// receive 2 return values from a function
+const [starter, mainCourse] = restaurant.order(2, 0);
+console.log(starter, mainCourse);
