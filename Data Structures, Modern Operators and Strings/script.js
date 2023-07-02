@@ -136,10 +136,20 @@ const letters = [...str, ' ', 'K.'];
 console.log(letters);
 console.log(...str);
 
+// Real world example
 const ingredients = [
-  prompt("Let's make pasta! Ingredient 1 ?"),
-  prompt('Ingredients 2 ? '),
-  prompt('Ingredients 3 ? '),
+  // prompt("Let's make pasta! Ingredient 1 ?"),
+  // prompt('Ingredients 2 ? '),
+  // prompt('Ingredients 3 ? '),
 ];
 console.log(ingredients);
 restaurant.orderPasta(...ingredients);
+
+// Objects
+const newRestaurant = { foundedIn: 1998, ...restaurant, founder: 'Guiseppe' };
+console.log(newRestaurant);
+
+const restaurantCopy = { ...restaurant };
+restaurantCopy.name = 'Ristorante Roma';
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
