@@ -104,3 +104,22 @@ console.log(main, secondary);
 const [starter, mainCourse] = restaurant.order(2, 0);
 console.log(starter, mainCourse);
 */
+
+// The Spread Operator (...)
+const arr = [7, 8, 9];
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(badNewArr);
+
+const newArr = [1, 2, ...arr];
+console.log(newArr);
+console.log(...newArr);
+
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+console.log(newMenu);
+
+// Copy Array
+const mainMenuCopy = [...restaurant.mainMenu];
+
+// Join 2 Arrays
+const menuLast = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(menuLast);
