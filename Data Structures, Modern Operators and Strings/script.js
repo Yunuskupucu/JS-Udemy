@@ -47,7 +47,13 @@ const restaurant = {
   },
 };
 
-restaurant.orderDelivery({
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+//for (const item of menu) console.log(item);
+for (const [i, el] of menu.entries()) {
+  console.log(`${i + 1}: ${el}`);
+}
+
+/* estaurant.orderDelivery({
   time: '22.30',
   address: 'Via del Sole,21',
   mainIndex: 2,
@@ -68,9 +74,9 @@ const {
   categories: tags,
 } = restaurant;
 // console.log(restaurantName, hours, tags);
-
+ */
 // Default Values
-const { menu = [], satarterMenu: starters = [] } = restaurant;
+//const { menu = [], satarterMenu: starters = [] } = restaurant;
 // console.log(menu, starters);
 
 // // Mutating Variables
@@ -81,9 +87,9 @@ const { menu = [], satarterMenu: starters = [] } = restaurant;
 // // console.log(a, b);
 
 // Nested Objects
-const {
-  fri: { open, close },
-} = openingHours;
+// const {
+//   fri: { open, close },
+// } = openingHours;
 // console.log(open, close);
 
 /*
@@ -123,7 +129,7 @@ console.log(starter, mainCourse);
 // const newArr = [1, 2, ...arr];
 // console.log(newArr);
 // console.log(...newArr);
-
+/* 
 const newMenu = [...restaurant.mainMenu, 'Gnocci'];
 // console.log(newMenu);
 
@@ -190,3 +196,4 @@ const x = [23, 5, 7];
 add(...x);
 
 restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
+ */
