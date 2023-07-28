@@ -173,6 +173,7 @@ document
   .querySelector('.buy')
   .addEventListener('click', lufthansa.buyPlane.bind(lufthansa));
 
+// Clousers
 const secureBooking = function () {
   let passengerCount = 0;
   return function () {
