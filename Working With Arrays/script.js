@@ -63,3 +63,19 @@ movements.forEach(function (mov, i, arr) {
     console.log(`Movement ${i + 1}: You withdrew ${Math.abs(mov)}`);
   }
 });
+console.log(movements);
+
+//accumulator --> Snowball
+/* const balance = movements.reduce(function (acc, cur, i, arr) {
+  console.log(`Iteration ${i}: ${acc}`);
+  return acc + cur;
+}, 0);
+console.log(balance); */
+
+const balance = movements.reduce((acc, cur) => acc + cur, 0);
+console.log(balance);
+
+// second way
+let balance2 = 0;
+for (const mov of movements) balance2 += mov;
+console.log(balance2);
