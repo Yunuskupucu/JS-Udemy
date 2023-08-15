@@ -22,7 +22,7 @@ console.log(arr);
 
 // Reverse --> orijinal diziyi değiştirir
 arr = ['a', 'b', 'c', 'd', 'e'];
-const arr2 = ['j', 'i', 'h', 'g', 'f '];
+const arr2 = ['k', 'j', 'i', 'h', 'g', 'f '];
 console.log(arr2.reverse());
 console.log(arr2);
 
